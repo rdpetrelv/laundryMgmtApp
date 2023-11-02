@@ -1,0 +1,219 @@
+// Colors
+$Green: #4283c0;
+$Background_gray: #ebebeb;
+$Default_text_darkgray: #1b1b1b;
+$Active_link_background_gray: #eee;
+$Active_link_background_darkgreen: #2d3a75;
+$Page_title_gray: #565656;
+
+body {
+    font-family: 'Open Sans';
+    background-color: $Background_gray;
+}
+
+a {
+    /*
+        Getting rid of default formatting for <a> elements. `inherits` tells that
+        `a` elements should use the value set on its parent for these properties.
+    */
+    text-decoration: inherit;
+    color: inherit;
+}
+
+// .Menu_link {
+//     padding-top: 5px;
+//     padding-bottom: 5px;
+//     padding-left: 7.5px;
+//     padding-right: 7.5px;
+// }
+
+
+.Header1{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    .Top_container {
+        height: 75px;
+        width: 1070px;
+        background-color: white;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        .logo_Menu{
+            display: flex;
+            justify-content: flex-start;
+            background-color: white;
+            flex-grow: 4;
+            padding: 5px;
+            padding-right: 7.5px;
+            padding-left: 7.5px;
+            align-items: center;
+            .logo_Image{
+
+                padding-right: 15px;
+            }
+            .Menu_links {
+                flex-grow: 4;
+                display: flex;
+                justify-content: flex-start;
+                vertical-align: bottom;
+                //padding-right: 15px;
+                //background-color: #47752d;
+                align-items: center;
+                .Menu_link{
+                    padding: 15px;
+                    border-radius: 50px;  
+                }
+                .Menu_link:hover{
+                    background-color: $Active_link_background_gray;
+                }
+                .active{
+                    background-color: $Active_link_background_gray;
+                }
+            }
+        }
+        .account_management_section{
+            .Login_Singin_buttons{
+                background-color: $Green; 
+                //font-size: 21px; 
+                //line-height: 21px; 
+                padding-right: 20px; 
+                margin-left: 20px;
+                padding-left: 20px; 
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 50px;  
+                color: white;
+                border-color: white;
+                border-style: none;
+            }
+            .Login_Singin_buttons:hover {
+                background: $Active_link_background_darkgreen; 
+            }
+            .active{
+                background: $Active_link_background_darkgreen; 
+            }
+        }
+    
+    }
+}
+
+
+.page-content {
+    font-family: 'Open Sans', sans-serif;
+    background-color: $Background_gray;
+    display: flex;
+  
+    .left-placeholder, .right-placeholder {
+      flex-grow: 1;
+    }
+    .center-placeholder{
+        display: flex;
+        width: 80%;
+       
+
+
+
+       .left-panel {
+        width:25%;
+        flex-direction: column;
+        padding-top:80px;
+        .menu-item {
+            font-size: 25px;
+            
+            color: $Default_text_darkgray;
+            height:110px;
+            background-color: white;
+            margin-bottom:1px;
+            padding-left:40px;
+            padding-top:20px;
+
+           &.active {
+            background-color:$Green;
+            color: white;
+          }
+          
+           
+          a {
+            color: inherit; 
+            text-decoration: none; 
+          } 
+        }
+       }
+
+        .right-panel {
+            
+            width:75%;
+            padding-top:40px;
+            
+
+
+            .up-panel {
+                font-size: 25px;
+                padding-left: 50px;
+                color: $Page_title_gray;
+
+            }
+
+
+            .down_panel {
+                padding-left: 50px;
+                display: flex;
+
+                .down-top, .down-down {
+                    font-size: 15px;
+                    padding-left: 10px;
+
+                    .first, .second {
+                       width: 500px;
+                       height: 300px;
+                       .menu-item {
+                        font-size: 18px;
+                        
+                        color: $Default_text_darkgray;
+                        height:50px;
+                        background-color: white;
+                        margin-bottom:1px;
+                        padding-left:20px;
+                        padding-top:20px;
+            
+                       &.active {
+                        background-color:$Green;
+                        color: white;
+                      }
+                      
+                       
+                      a {
+                        color: inherit; 
+                        text-decoration: none; 
+                      } 
+                    }
+
+                       .title {
+                        background-color: $Green;
+                        font-size: 20px;
+                        padding-left: 100px;
+                        color: white;
+                        margin-bottom:1px;
+                      
+        
+                    }
+
+        
+                    }
+
+
+    
+                }
+               
+
+             
+            
+
+
+             
+            }
+        }
+      }
+  } 

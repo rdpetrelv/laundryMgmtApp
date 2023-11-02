@@ -11,4 +11,8 @@ if [ -z "$SASS_EXEC" ]; then
   exit 1
 fi
 
-CHOKIDAR_USEPOLLING=true sass --watch integration/style.scss integration/assets/stylesheets/output.css
+
+
+CHOKIDAR_USEPOLLING=true sass --watch integration/stylef.scss:integration/assets/stylesheets/outputf.css
+
+
