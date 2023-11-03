@@ -245,6 +245,12 @@ a {
                 .password_field:focus{
                     outline: 2px solid $Green;
                 }
+                .text_subject:focus{
+                    outline: 2px solid $Green;
+                }
+                .text_message:focus{
+                    outline: 2px solid $Green;
+                }
             }
         }
 
@@ -253,7 +259,7 @@ a {
     
 }
 
-input[type=email], [type=password]{
+input[type=email], [type=password], [type=text]{
     box-sizing: border-box;
     width: 450px;
     font-size: 16px;
