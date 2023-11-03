@@ -217,3 +217,53 @@ a {
         }
       }
   } 
+
+
+  .new-page-content {
+    font-family: 'Open Sans', sans-serif;
+    background-color: $Background_gray;
+    display: flex;
+  
+    .left-placeholder, .right-placeholder {
+      flex-grow: 1;
+    }
+    .center-placeholder{
+            padding-top:40px;
+            width: 70%;
+        
+            .text {
+                text-align: center;
+                .title {
+                  font-size: 40px;
+                  color:$Default_text_darkgray;
+                  text-align: center;
+
+ 
+               }
+                 
+
+                .description {
+                  font-size: 30px;
+                  color:$Page_title_gray;
+                  padding-bottom: 10px;
+               }
+
+            }
+
+
+            .images {
+                padding-left: 50px;
+                display: flex;
+                justify-content: center;
+
+                .down-top, .down-down {
+                    font-size: 15px;
+                    padding-left: 10px;
+                    padding-top: 40px;
+                    
+
+             
+            }
+        }
+      }
+  } 
