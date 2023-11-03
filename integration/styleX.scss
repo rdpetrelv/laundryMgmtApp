@@ -1,0 +1,240 @@
+// Colors
+$Green: #4283c0;
+$Background_gray: #ebebeb;
+$Default_text_darkgray: #1b1b1b;
+$Active_link_background_gray: #eee;
+$Active_link_background_darkgreen: #2d3a75;
+$Page_title_gray: #565656;
+
+body {
+    font-family: 'Open Sans';
+    background-color: $Background_gray;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+
+.Header1{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    .Top_container {
+        height: 75px;
+        width: 1070px;
+        background-color: white;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+        .logo_Menu{
+            display: flex;
+            justify-content: flex-start;
+            background-color: white;
+            flex-grow: 4;
+            padding: 5px;
+            padding-right: 7.5px;
+            padding-left: 7.5px;
+            align-items: center;
+            .logo_Image{
+
+                padding-right: 15px;
+            }
+            .Menu_links {
+                flex-grow: 4;
+                display: flex;
+                justify-content: flex-start;
+                vertical-align: bottom;
+                //padding-right: 15px;
+                //background-color: #47752d;
+                align-items: center;
+                .Menu_link{
+                    padding: 15px;
+                    border-radius: 50px;  
+                }
+                .Menu_link:hover{
+                    background-color: $Active_link_background_gray;
+                }
+                .active{
+                    background-color: $Active_link_background_gray;
+                }
+            }
+        }
+        .account_management_section{
+            .Login_Singin_buttons{
+                background-color: $Green; 
+                //font-size: 21px; 
+                //line-height: 21px; 
+                padding-right: 20px; 
+                margin-left: 20px;
+                padding-left: 20px; 
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 50px;  
+                color: white;
+                border-color: white;
+                border-style: none;
+            }
+            .Login_Singin_buttons:hover {
+                background: $Active_link_background_darkgreen; 
+            }
+            .active{
+                background: $Active_link_background_darkgreen; 
+            }
+        }
+    
+    }
+}
+   
+
+main {
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main img {
+    height: 100%;
+    align-items: center;
+    width: auto; 
+    display: block; 
+  }
+    
+  .title,
+  .slogan,
+  .learn {
+    position: absolute;
+    color: #1b1b1b;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .title {
+    top: 30%;
+    font-size: 50px;
+    font-weight: 800;
+  }
+  
+  .slogan {
+    top: 48%;
+    font-size: 60px;
+    font-weight: 1000;
+  }
+  
+  .learn {
+    top: 70%;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #4283c0;
+    color: white;
+    text-decoration: none;
+  }
+  
+
+.footer {
+    display: flex;
+    width: 1070px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 20px;    
+  }
+  
+  
+  .location, .email, .call {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .location, .call {
+    background-color: #4283c0;
+    color: white;
+ 
+  }
+  
+  .email {
+    background-color: white;
+}
+
+
+
+.page-login{  
+    
+    .form-login{
+        
+        background-color: white;
+        border-radius: 5px;
+        width: 570px;
+        margin: 50px auto 0; /* Ajusta el valor '50px' según sea necesario para mover el cuadro hacia abajo */
+        padding: 20px;
+        
+        h1{
+            font-size: 32px;
+            font-weight: 200;
+            color: $Page_title_gray;
+            padding-top: 67px;
+            padding-bottom: 22px;
+            margin: 0;
+            padding-left: 60px;
+        }
+        
+        .form-row{
+            width: 450px;
+            height: 45px;
+            font-size: 16px;
+            padding-left: 60px;
+            padding-bottom: 20px;
+            margin: 0;
+        
+        }
+    
+        input[type=email], input[type=password]{
+            width: 96%;
+            height: 86.7%;
+            padding-left: 3%;
+            color: $Default_text_darkgray;            
+
+            &:focus{
+                outline-color: $Green;
+            }
+
+            &:invalid{
+                outline-color: red;
+               }           
+        } 
+    
+    
+        input[type=submit]{
+            width: 450px;
+            height: 45px;
+            border: 1px solid transparent;
+            background-color: $Green;
+            font-weight: 600;
+            color: white;
+            border-radius: 30px;
+            touch-action: manipulation;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            background-image: none;
+
+         }       
+    
+    }
+}
